@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@+id/C_item_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="vertical"
+    app:cardElevation="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Image_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/Item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:text="عنوان"
+                android:fontFamily="@font/iransans"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="2dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/Item_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="زیرعنوان"
+                android:fontFamily="@font/iransans"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/Secondary_Image_img"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:background="@android:color/black"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

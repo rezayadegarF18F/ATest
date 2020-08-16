@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/Enter_group"
+        android:enabled="true"
+        android:orderInCategory="1">
+
+        <item
+            android:id="@+id/Wellcome_item"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="خوش آمد گویی"/>
+
+        <item
+            android:id="@+id/goodbye_item"
+            android:icon="@drawable/ic_error_black_24dp"
+            android:title="خداحافظی"/>
+
+    </group>
+
+</menu>
